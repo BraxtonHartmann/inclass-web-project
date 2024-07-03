@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Utah mighty five ">
+    <title>Utah Mighty Five</title>
+    <style>
+        :root {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: inherit;
+        }
+
+        .clearfix {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        /* --------------------------------------------------------- */
+        nav {
+            background-color: rgb(231, 231, 231);
+            border-bottom: 1px solid gray;
+            padding: 1rem 1rem;
+            margin-bottom: 2rem;
+        }
+
+        nav>div>h3 {
+            color: gray;
+            display: inline;
+        }
+
+        .bold {
+            color: black;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        a {
+            color: orange;
+            text-decoration: none;
+        }
+
+        nav div {
+            display: inline;
+        }
+
+        nav div ul li,
+        nav div ul {
+            display: inline;
+        }
+
+        .right-align {
+            float: right;
+        }
+
+        li>a {
+            padding: 0 .5rem;
+        }
+
+        h3 {
+            padding: 0;
+            margin: 0;
+        }
+
+        .underline {
+            padding-bottom: .5rem;
+            border-bottom: 2px solid orange;
+        }
+
+        /* --------------------------------------------------------- */
+
+        main {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .youtube {
+            display: inline;
+            float: right;
+            width: 40%;
+        }
+
+        .youtube-embed {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .youtube-embed iframe {
+            position: absolute;
+            border: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video {
+            border-bottom: 1px solid grey;
+            padding-bottom: 2rem;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .vidtext {
+            width: 60%;
+            padding-right: 3rem;
+        }
+
+        p {
+            color: gray;
+        }
+
+        .button {
+            background-color: orange;
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            line-height: 1rem;
+        }
+
+        /* --------------------------------------------------------- */
+
+        .parks {
+            display: table;
+            border-spacing: 2rem;
+            width: 100%;
+        }
+
+        .parks .col {
+            border: 1px solid gray;
+            display: table-cell;
+            width: 33.33%;
+        }
+
+        img {
+            width: 100%;
+            aspect-ratio: 16/9;
+        }
+
+        .col p, .col h3{
+            margin: 0 10px;
+            padding: 5px 0;
+        }
+
+        .centered {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .centered a{
+            margin-bottom: 15px;
+        }
+
+        /* --------------------------------------------------------- */
+        .contacts {
+            width: 100%;
+            background-color: gray;
+            display: table;
+            padding-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        h4 {
+            color: white;
+            margin-bottom: -3px;
+        }
+
+        .fcol {
+            display: table-cell;
+        }
+
+        .fcol>li {
+            padding: 5px;
+        }
+
+        footer>div>ul>li {
+            float: left;
+        }
+
+        footer .wrapper {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        footer .right-align p{
+            display: inline;
+        }
+        footer p{
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left-align">
+                <h3>Utah Mighty <span class="bold">FIVE</span></h3>
+                <ul>
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                    <li><a href="#">Four</a></li>
+                    <li><a href="#">Five</a></li>
+                </ul>
+            </div>
+            <div class="right-align">
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li class="underline"><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="video">
+            <div class="youtube">
+                <div class="youtube-embed">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iKJ-TuDl8h0?si=bCW5NTvatTSp7NRD"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="vidtext">
+                <h1>Close Your Eyes and Open Your Mind</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda atque, quae cumque dolores aut
+                    quis doloribus sapiente, alias dolorem, magni nam voluptatem ipsam quos natus maiores illo inventore
+                    aliquid aliquam?</p>
+                <br>
+                <div class="wrapper">
+                    <a href="#" class="button">Take a Tour</a>
+                    <a href="#" class="button">Start a Free Trial</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>What are they?</h2>
+            <div class="parks">
+                <div class="col">
+                    <img src="https://images.unsplash.com/photo-1493102013740-f512f19b4656?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Bryce Canyon National Park">
+                    <h3>Bryce Canyon National Park</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolorem suscipit aperiam nam,
+                        harum quasi modi rem nobis culpa. Reiciendis optio suscipit vitae neque ratione eaque. Quas,
+                        soluta. Excepturi, atque.</p>
+                </div>
+                <div class="col">
+                    <img src="https://images.unsplash.com/photo-1531512996069-514ed70f847e?q=80&w=2831&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Zion National Park">
+                    <h3>Zion National Park</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam harum placeat consequuntur
+                        sapiente corporis doloribus omnis ipsum dolore ut, molestiae impedit excepturi eveniet expedita
+                        asperiores iure perspiciatis quam ad ratione! Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Eos quisquam distinctio, adipisci cupiditate aspernatur dignissimos laudantium, dolorum
+                        sequi ea quia suscipit minima quaerat obcaecati quae harum delectus sunt, culpa tempora.</p>
+                </div>
+                <div class="col">
+                    <img src="https://images.unsplash.com/photo-1605999212475-d958ebac5e57?q=80&w=2926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Arches National park">
+                    <h3>Arches National Park</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda aliquid quia, cumque quisquam
+                        consequatur rerum error, quasi ab culpa necessitatibus pariatur molestiae deserunt maxime at
+                        fugiat dicta blanditiis accusamus placeat.</p>
+                </div>
+            </div>
+            <div class="centered">
+                <a href="#" class="button">Remaining Two</a>
+            </div>
+        </section>
+    </main>
+    <div class="contacts clearfix">
+        <ul class="fcol">
+            <li>
+                <h4>Offices</h4>
+            </li>
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Four</a></li>
+        </ul>
+        <ul class="fcol">
+            <li>
+                <h4>Links</h4>
+            </li>
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Four</a></li>
+        </ul>
+        <ul class="fcol">
+            <li>
+                <h4>Contact</h4>
+            </li>
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Four</a></li>
+        </ul>
+        <ul class="fcol">
+            <li>
+                <h4>Locations</h4>
+            </li>
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Four</a></li>
+        </ul>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <ul>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Partner</a></li>
+                <li><a href="#">Explore</a></li>
+            </ul>
+            <div class="right-align">
+                <p>&copy; All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

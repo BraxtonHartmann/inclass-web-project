@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: inherit;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .col{
+            padding: 10px;
+        }
+
+        .eqh-overflow .col{
+            float: left;
+            padding-bottom: 9999999px;
+            margin-bottom: -9999999px;
+        }
+
+        .eqh-overflow{
+            overflow: hidden;
+        }
+
+        .eqh-table-cells{
+            display: table;
+        }
+        
+        .eqh-table-cells .col{
+            display: table-cell;
+        }
+
+    </style>
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1>Using overflow</h1>
+        </header>
+        <section class="eqh-overflow clearfix">
+            <div class="col" style="width: 20%; background-color: #eee;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+            <div class="col" style="width: 60%; background-color: #000; color: #fff;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam reprehenderit rem exercitationem ipsum,
+                repellendus magnam consequatur beatae laudantium dignissimos. Similique deleniti unde libero suscipit ad
+                quisquam consequatur repellat exercitationem reprehenderit. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Assumenda asperiores pariatur numquam beatae nulla reprehenderit dolorem doloremque
+                vel officia fugit, autem nihil nisi facilis omnis, ea soluta expedita aperiam quidem!</div>
+            <div class="col" style="width: 20%; background-color: #eee;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas officiis iure fugit assumenda provident
+                ipsa tenetur ipsam. Ut quam tenetur velit, possimus laborum inventore sequi ratione! Cum quos similique
+                impedit.</div>
+        </section>
+    </article>
+
+    <article>
+        <header>
+            <h1>Using table cells</h1>
+        </header>
+        <section class="eqh-table-cells">
+            <div class="col" style="width: 20%; background-color: #eee;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+            <div class="col" style="width: 60%; background-color: #000; color: #fff;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam reprehenderit rem exercitationem ipsum,
+                repellendus magnam consequatur beatae laudantium dignissimos. Similique deleniti unde libero suscipit ad
+                quisquam consequatur repellat exercitationem reprehenderit. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Assumenda asperiores pariatur numquam beatae nulla reprehenderit dolorem doloremque
+                vel officia fugit, autem nihil nisi facilis omnis, ea soluta expedita aperiam quidem!</div>
+            <div class="col" style="width: 20%; background-color: #eee;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas officiis iure fugit assumenda provident
+                ipsa tenetur ipsam. Ut quam tenetur velit, possimus laborum inventore sequi ratione! Cum quos similique
+                impedit.</div>
+        </section>
+    </article>
+</body>
+
+</html>

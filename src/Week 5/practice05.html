@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: inherit;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        h3,
+        ul {
+            display: inline;
+            text-decoration: none;
+        }
+
+        ul li {
+            color: salmon;
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav {
+            width: 100%;
+            border-bottom: 1px solid lightgray;
+            padding-bottom: 5px;
+        }
+
+        .float-left {
+            float: left;
+        }
+
+        .float-left ul {
+            padding-left: 1rem;
+        }
+
+        .float-right {
+            float: right;
+        }
+
+        main {
+            width: 80%;
+            margin: auto;
+        }
+
+        h1{
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .pink {
+            color: #fe7b7c;
+        }
+
+        img{
+            width: 45%;
+            float: left;
+            display: inline;
+            margin: 0 1rem;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        
+        .circle{
+            float:left;
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            margin: .5rem;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .vcenter{
+            line-height: 150px;
+        }
+
+        .eqh-table-cells{
+            display: table;
+        }
+
+        .eqh-table-cells .col{
+            display: table-cell;
+        }
+
+        footer{
+            display: inline;
+        }
+
+        .footer{
+            border-top:1px solid lightgray ;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="clearfix">
+            <div class="float-left">
+                <h3>Floated Menus:</h3>
+                <ul>
+                    <li>One</li>
+                    <li>Two</li>
+                </ul>
+            </div>
+            <div class="float-right">
+                <ul>
+                    <li>Three</li>
+                    <li>Four</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article class="article-1 clearfix">
+            <h1>
+                <span class="pink">&lt;Article1&gt;:</span> Wrapping text around an image
+            </h1>
+            <img src="https://images.unsplash.com/photo-1546447911-95677822edea?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="city">
+            <h2>A secondary heading</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, quis commodi accusamus culpa porro eius
+                alias, facilis nesciunt vitae eveniet vero omnis! Qui placeat pariatur, commodi totam reiciendis ex
+                maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cum consequatur cupiditate
+                possimus amet aperiam dicta, veritatis neque obcaecati nobis molestiae officia suscipit eius magnam
+                voluptatibus eligendi quae soluta vel! Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, a
+                suscipit, molestias sit maxime ab incidunt eaque est tempora quas ipsum qui nihil fugiat asperiores, ad
+                ipsa veritatis cum? Ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quod
+                inventore asperiores consequuntur odio quaerat ea nisi, non quis voluptatum! Sed amet accusantium
+                impedit, architecto fugit quos totam tempore facere. lor</p>
+        </article>
+        <article class="article-2">
+            <h1>
+                <span class="pink">&lt;Article2&gt;:</span> Centering text vertically
+            </h1>
+            <section>
+                <div class="clearfix vcenter">
+                    <div class="circle">Selectors</div>
+                    <div class="circle">Inheritance</div>
+                    <div class="circle">Cascade</div>
+                    <div class="circle">Specificity</div>
+                </div>
+            </section>
+        </article>
+        <article class="article-3">
+            <h1>
+                <span class="pink">&lt;Article3&gt;:</span> Equal-height columns
+            </h1>
+            <section class="eqh-table-cells">
+                <div class="col" style="width: 20%; background-color: #eee;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.  </div>
+                <div class="col" style="width: 60%; background-color: #000; color: #fff;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam reprehenderit rem exercitationem ipsum,
+                    repellendus magnam consequatur beatae laudantium dignissimos. Similique deleniti unde libero suscipit ad
+                    quisquam consequatur repellat exercitationem reprehenderit. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Assumenda asperiores pariatur numquam beatae nulla reprehenderit dolorem doloremque
+                    vel officia fugit, autem nihil nisi facilis omnis, ea soluta expedita aperiam quidem!</div>
+                <div class="col" style="width: 20%; background-color: #eee;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas officiis iure fugit assumenda provident
+                    ipsa tenetur ipsam. Ut quam tenetur velit, possimus laborum inventore sequi ratione! Cum quos similique
+                    impedit.</div>
+            </section>
+        </article>
+    </main>
+    <section class="footer">
+        <footer>
+            <h3>Braxton Hartmann</h3>
+            <div class="float-right">&copy; All rights reserved</div>
+        </footer>
+    </section>
+</body>
+
+</html>

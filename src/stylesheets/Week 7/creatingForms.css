@@ -1,0 +1,59 @@
+form{
+    width: 80%;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+fieldset{
+    border: 1px solid red;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+fieldset{
+    font-weight: bold;
+    padding: 0 1rem;
+}
+
+.field{
+    margin: 1rem;
+}
+
+.field input:not([type="radio"]):not([type="checkbox"]),textarea, select{
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    padding: .5rem;
+    width: 100%;
+}
+
+button{
+    padding: .8rem 2rem;
+    background-color: lightgray;
+    border: 0;
+    border-radius: .4rem;
+    font-size: 1rem;
+}
+
+button:hover{
+    background-color: rgb(240, 239, 239);
+}
+
+button[type="submit"]{
+    background: #3378e8;
+    color: white;
+}
+
+button[type="submit"]:hover{
+    background: #6490d8;
+    color: white;
+}
+
+button[type="reset"]{
+    background: black;
+    color: white;
+}
+
+button[type="reset"]:hover{
+    background: rgb(51, 51, 51);
+    color: white;
+}

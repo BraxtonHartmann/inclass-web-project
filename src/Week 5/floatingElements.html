@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: inherit;
+        }
+
+        img {
+            width: 40%;
+            padding: 5px;
+            float: left;
+        }
+
+        .col-1,
+        .col-3 {
+            width: 25%;
+            float: left;
+        }
+
+        .col-2 {
+            width: 50%;
+            float: left;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        nav > ul{
+            list-style: none;
+            padding-left: 0;
+            float: left;
+        }
+
+        nav li{
+            display: inline;
+        }
+        
+        .pull-right{
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="clearfix">
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
+        <ul class="pull-right">
+            <li>Four</li>
+            <li>Five</li>
+            <li>Six</li>
+        </ul>
+    </nav>
+    <h1>Floating elements</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis saepe iure, accusantium repellat hic esse
+        voluptatum ipsum omnis quam! Repellendus, similique. Eveniet aspernatur eum qui, non inventore vero totam
+        quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ipsam vel esse eligendi obcaecati
+        maiores, dignissimos nesciunt rerum at! Voluptates sint velit aperiam. Autem necessitatibus cumque aliquam
+        deserunt. Laboriosam, facilis!
+    </p>
+
+    <h2>Floating inline elements</h2>
+    <p class="with-img clearfix">
+        <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=2882&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="forest">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quo ad repellat voluptate, maxime earum sunt
+        quidem id sint quisquam amet. Nemo quod sequi asperiores culpa debitis sunt nam expedita! Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Impedit, at recusandae? Assumenda in recusandae molestias, asperiores
+        aspernatur et maiores sapiente inventore qui id ipsa unde libero cupiditate? Tempora, quam et. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Commodi accusamus quae autem ratione maiores expedita ullam rerum
+        officiis a exercitationem ut quo velit obcaecati, quibusdam numquam ad aliquam, vel fugit!
+        <br>
+        <button>More</button>
+    </p>
+
+    <h2>Floating block elements</h2>
+    <div class="wrapper clearfix">
+        <div class="col-1">
+            <h3>Left column</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates in a inventore illo debitis sit.
+                Autem in debitis soluta rem, doloribus optio. Obcaecati id corporis dicta repudiandae nulla animi
+                excepturi.</p>
+        </div>
+        <div class="col-2">
+            <h3>Middle column</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati nesciunt eveniet corporis ad quaerat
+                sunt nulla cupiditate magnam, ducimus nam dolorem adipisci voluptatem iusto ipsam officia inventore,
+                commodi numquam hic?Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus beatae,
+                debitis dolor consequuntur nemo omnis assumenda blanditiis molestiae quasi sed quis numquam
+                exercitationem placeat, temporibus in nisi doloribus ut.
+            </p>
+        </div>
+        <div class="col-3">
+            <h3>Right column</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    <h2>Items after floated elements</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam placeat nam eveniet nobis ex ut ducimus quam
+        quaerat, sed quasi nesciunt nemo quis a, vel qui rerum aliquam reiciendis. Itaque?</p>
+
+</body>
+</html>

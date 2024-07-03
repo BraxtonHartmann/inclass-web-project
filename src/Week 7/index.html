@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            box-sizing: border-box;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        *, ::before, ::after {
+            box-sizing: inherit;
+        }
+        
+        body{
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid lightgray;
+            padding-left: .5rem;
+            height: 4rem;
+        }
+
+        nav {
+            display: flex;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .active{
+            border-bottom: 2px solid blue;
+        }
+
+        li {
+            list-style: none;
+            padding: .5rem 1rem;
+        }
+
+        li a {
+            text-decoration: none;
+        }
+
+        .right {
+            margin-left: auto;
+        }
+
+        main{
+            background-color: lavender;
+        }
+
+        .container{
+            display: flex;
+            width: 80vw;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .container > div{
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 2rem;
+            margin: 0 1rem;
+            padding: 2rem 1rem;
+        }
+
+        .container > div.navigation{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .container > div.navigation >ul{
+            display: block;
+            padding-left: 3rem;
+        }
+
+        .container > div.main-content{
+            flex-grow: 3;
+        }
+
+        h1{
+            width: 100%;
+            border-bottom: 2px solid blue;
+            padding-bottom: 1rem;
+        }
+
+        .field{
+            margin: 1rem 0;
+        }
+
+        p{
+            margin: 0;
+        }
+        .field input:not([type="radio"]):not([type="checkbox"]){
+            width: 100%;
+            height: 3rem;
+            padding: 5px;
+            border: 1px solid;
+            border-radius: .2rem;
+            margin-top: .5rem;
+        }
+
+        label:not([for="yes"]):not([for="no"]):not([for="tc"]){
+            font-weight: bold;
+        }
+        
+        .field [for="message"]{
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+
+        .blue{
+            color: blue;
+        }
+
+        .main-content > form >.field > input[id="username"]{
+            border-color: lime;
+        }
+
+        .main-content > form >.field > p[name="username"]{
+            color: lime;
+        }
+
+        .main-content > form >.field > input[id="email"]{
+            border-color: red;
+        }
+
+        .main-content > form >.field > p[name="email"]{
+            color: red;
+        }
+
+        footer{
+            height: 4rem;
+            background-color: black;
+            color: lavender;
+            text-align: center;
+        }
+        footer > div{
+            line-height: 4rem;
+        }
+
+        button{
+            height: 2rem;
+            width: 5rem;
+            margin: 0 .5rem;
+            border: none;
+            border-radius: .3rem;
+            font-size: 1.1rem;
+        }
+
+        button[type="submit"]{
+            background-color: blue;
+            color: white;
+        }
+
+        button[type="submit"]:hover{
+            background-color: rgb(55, 55, 252);
+            color: white;
+        }
+
+        button[type="submit"]:active{
+            background-color: lightgray;
+            color: blue;
+        }
+
+        button[type="button"]{
+            background-color: lightgray;
+            color: blue;
+        }
+
+        button[type="button"]:hover{
+            background-color: darkgray;
+            color: blue;
+        }
+        button[type="button"]:active{
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Braxton Hartmann</h2>
+        <nav>
+            <ul class="left">
+                <li><a href="#1">Home</a></li>
+                <li><a href="#2">Products</a></li>
+                <li><a href="#3">Services</a></li>
+                <li class="active"><a href="#4">Contact us</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="#5">Sign In</a></li>
+                <li><a href="#6">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="navigation">
+                <h2>Main Menu</h2>
+                <ul>
+                    <li><a href="#7">Home</a></li>
+                    <li><a href="#8">Products</a></li>
+                    <li><a href="#9">Services</a></li>
+                    <li><a href="#10">About us</a></li>
+                </ul>
+                <h2>Featured Projects</h2>
+                <ul>
+                    <li><a href="#(link_1)">Project A</a></li>
+                    <li><a href="#(link_2)">Project B</a></li>
+                    <li><a href="#(link_3)">Project C</a></li>
+                    <li><a href="#(link_4)">Project D</a></li>
+                    <li><a href="#(link_5)">Project E</a></li>
+                    <li><a href="#(link_6)">Project F</a></li>
+                    <li><a href="#(link_7)">Project G</a></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <form method="post" action="">
+                    <h1>Contact Us Form</h1>
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Type name here">
+                    </div>
+                    <div class="field">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Text input">
+                        <p name="username">This username is avaliable</p>
+                    </div>
+                    <div class="field">
+                        <label>Are you a member?</label>
+                        <br>
+                        <input type="radio" name="member" id="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="member" id="no">
+                        <label for="no">No</label>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email input">
+                        <p name="email">This email is invalid</p>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="80" rows="10" placeholder="Text area"></textarea>
+                    </div>
+                    <div class="field">
+                        <input type="checkbox" name="tc" id="tc">
+                        <label for="tc">I agree to the <span class="blue">terms and conditions</span></label>
+                    </div>
+                    <button type="submit">Submit</button>
+                    <button type="button">Cancel</button>
+                </form>
+                
+            </div>
+
+
+        </div>
+    </main>
+    <footer>
+        <div>&copy; 2024 - CS 2350 - All rights reserved</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="This is a page about soccer">
+  <title>Week 03- A simple football page</title>
+
+  <!-- Font import -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Internal CSS */
+    body {
+      font-family: Oswald, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 500;
+      background-color: white;
+      margin: 0 20%;
+    }
+
+    h1 {
+      text-align: center;
+      border-bottom: 3px solid skyblue;
+      padding-bottom: 10px;
+    }
+
+    h2 {
+      padding-bottom: 5px;
+      border-bottom: 1px solid skyblue;
+    }
+
+    h3 {
+      color: darkgray;
+    }
+
+    .intro {
+      text-align: justify;
+    }
+
+    div {
+      padding-top: 10px;
+      border-top: 3px solid skyblue;
+      text-align: right;
+    }
+
+  /* Navigation links styling */
+    ul.menu{
+      list-style: none;
+      text-align: center;
+      padding-left: 0;
+    }
+
+    ul.menu li{
+      display: inline;
+      padding: 10px;
+    }
+
+    ul.menu li a{
+      text-decoration: none;
+      color: skyblue;
+    }
+
+    ul.menu li a:hover{
+      color: darkgray;
+    }
+
+    aside{
+      background-color: blueviolet;
+      color: white;
+      /* 
+      (top, right, bottom, left) 
+      (all)
+      (top/bottom, Left/right)
+      (top, left/right, bottom)
+      */
+      padding: 10px 20px 40px;
+      margin-right: 30%;
+
+      /* border(width, style, color) */
+      border-right: 10px solid greenyellow ;
+    }
+    
+    footer{
+      text-align: right;
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="menu">
+      <li><a href="#">Football</a></li>
+      <li><a href="../Week 2/indexNotes.html">Soccer</a></li>
+      <li><a href="https://www.nba.com" target="_new_tab">Basketball</a></li>
+      <li><a href="https://usavolleyball.org" target="_new_tab">Volleyball</a></li>
+    </ul>
+  </nav>
+  <!-- 
+  unordered list (ul)     (li)
+  ordered list (ol)       (li)
+  description list (dl)   (dt & dd)
+  -->
+  <main>
+    <section>
+      <h1>
+        <img width="150" height="150"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ocq1FQyJqlplLMP_2z1HRaXhVe8RRioh8oxEaL8v8w&s"
+          alt="A soccer ball" /><br />
+        American Football
+      </h1>
+      <article>
+        <p class="intro">
+          Lorem ipsum dolor <strong>sit amet consectetur</strong> adipisicing elit. Architecto similique
+          consequatur ab
+          quamsed hic deleniti, quae dolorum aut eaque perferendis, <em>amet consequuntur a voluptas</em>
+          voluptatibus reiciendis animi modi
+          recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus
+          <s>maxime veniamdoloremque ducimus expedita consectetur, deserunt</s> laborum nisi, quae maiores ipsam
+          recusandae totam harum
+          voluptatem corporis error hic ex. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <mark>
+            Voluptatibus
+            voluptate quisquam hic temporibus. Perspiciatis inventore nobis incidunt corrupti commodi nihil?
+            Enim laboriosam iure quam non odit repudiandae totam repellendus explicabo.
+          </mark>
+        </p>
+        <!-- Nested List example -->
+        <ul>
+          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, ipsa ullam amet quod voluptatum ipsam,
+            assumenda impedit distinctio rem neque adipisci ut vel, molestiae dolorem nam nemo numquam accusamus sint.
+          </li>
+          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere earum odit praesentium cupiditate sit
+            pariatur recusandae ratione ab fugiat incidunt, totam deserunt possimus exercitationem dignissimos excepturi
+            voluptatibus quibusdam unde assumenda.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iusto voluptatum hic tempora! Quo eius
+            eligendi itaque. Assumenda corporis ex laudantium corrupti, unde recusandae, ullam porro rem perspiciatis a
+            harum?</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi in ipsam sint quam, voluptate, alias
+            error asperiores rem nostrum quo obcaecati aperiam amet perspiciatis repellat eum. Nihil vero temporibus
+            repudiandae.</li>
+          <li>
+            This is a nested numeric list
+            <ol>
+              <li>One</li>
+              <li>Two</li>
+              <li>
+                <ul>
+                  <li>Hello</li>
+                  <li>Hi</li>
+                  <li>Howdy</li>
+                </ul>
+              </li>
+              <li>
+                <dl>
+                    <dt>Hello</dt>
+                    <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, soluta modi! Distinctio labore vero
+                      voluptatem laboriosam quis aut quisquam provident cumque adipisci, magni, dignissimos vel sequi, officiis
+                      expedita sed similique.</dd>
+                    <dt>Hi</dt>
+                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eos eius soluta doloremque, nulla
+                      voluptatibus ullam vitae ut porro? Facere ex eum commodi ipsum ducimus amet consequuntur, rerum id quisquam.
+                    </dd>
+                    <dt>Welcome</dt>
+                    <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit vitae sit, cum fugit sapiente quod natus
+                      at, quos et in, inventore facilis velit magni consequuntur impedit dolorem atque libero ex.</dd>
+                </dl>
+              </li>
+            </ol>
+
+          </li>
+        </ul>
+
+      </article>
+    </section>
+
+    <section>
+      <header>
+        <h2>Keywords</h2>
+      </header>
+      <article>
+        <p>
+          <b>lorem</b>,<b>ipsum</b>, <b>dolor</b>
+        </p>
+        <h2>Terminalogy</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quam ea ipsa voluptatibus aperiam. Minus,
+          mollitia,
+          at totam nam vero natus soluta, amet provident quos dolorum facilis minima. Inventore, voluptates?
+          Delectus, maiores, voluptate praesentium consectetur neque id repellat reiciendis nulla hic magnam
+          aliquid
+          quisquam
+          sequi maxime similique, recusandae repudiandae amet possimus. Voluptatum consequatur voluptatibus
+          obcaecati
+          voluptatem recusandae debitis alias modi.
+          Tenetur cupiditate, ipsa enim eaque ullam ducimus placeat inventore harum voluptatem debitis vero
+          incidunt
+          ratione
+          laborum distinctio esse explicabo tempora sapiente accusamus id quis fugiat! Optio et maiores blanditiis
+          porro.
+          <q>
+            Dignissimos debitis eos aperiam ad perspiciatis illum dolor at omnis nihil impedit, saepe
+            consectetur
+            doloribus!
+            Exercitationem iure soluta natus hic facilis recusandae, saepe et quae! Veniam veritatis possimus
+            labore
+            voluptatum.
+          </q>
+          Expedita aliquam earum facere autem, fuga vitae laborum quaerat reprehenderit, perferendis quos non
+          repellendus
+          alias accusantium molestias assumenda cumque! Ea, perspiciatis. Labore expedita quam error vitae aut
+          doloribus sin voluptas.
+        </p>
+        <ol>
+          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti quam consequuntur minima labore
+            reprehenderit porro exercitationem quo numquam quia repudiandae eos enim, ad odit architecto similique animi
+            iure maxime facilis.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsa cupiditate laboriosam, illum odio est
+            sit, quo sequi facere suscipit magni aut, nostrum hic nisi? Eveniet at excepturi in quos?</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nesciunt, eos maiores doloremque, nam
+            tenetur, ducimus quaerat exercitationem optio magnam neque? Suscipit velit corporis, id rerum eveniet
+            debitis labore placeat.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus soluta nisi tenetur debitis minima
+            mollitia eveniet fuga libero amet eaque. Nesciunt molestiae, provident consectetur amet sapiente vitae non
+            quidem fuga.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus deserunt laudantium, vel optio, quo
+            beatae eum nesciunt quod, qui vero magnam tenetur molestiae recusandae expedita praesentium veniam iste
+            corrupti nemo?</li>
+        </ol>
+
+      </article>
+    </section>
+
+    <section>
+      <header>
+        <h2>History</h2>
+      </header>
+      <article>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo tenetur dolorum voluptatum dolor
+          consequuntur
+          reiciendis optio iure corporis, molestiae hic voluptatem! Cum deleniti recusandae nesciunt reiciendis
+          minus
+          voluptatem enim totam?</p>
+
+        <h3>1850s-1930s</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolore ipsam reprehenderit quasi
+          praesentium
+          officiis dignissimos? Placeat libero optio perferendis! Aspernatur ut unde, non dolores omnis dicta sit
+          mollitia
+          labore.</p>
+
+        <h3>1931-present</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio eaque quis hic officia obcaecati mollitia
+          cupiditate quo? Exercitationem cum deserunt recusandae culpa ad odit? Maxime asperiores tenetur
+          accusamus
+          amet!
+          Sequi.
+          Porro officia ab aliquid, minima soluta pariatur excepturi minus harum beatae cupiditate maxime dolorum
+          voluptatum
+          neque sapiente error quia aut saepe! Vitae culpa nesciunt, dolore id nam iure ex a?</p>
+
+        <blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti esse officia cum nisi
+          voluptate
+          eveniet
+          perspiciatis, mollitia quasi enim similique dolorem reprehenderit iste ipsum earum odio ea vitae ratione
+          nulla!
+        </blockquote>
+
+        <h2>Example code</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum obcaecati hic, saepe,
+          <code>eligendi totam alias labore, dolor aperiam delectus ut iure minima deleniti tempora eaque corrupti voluptatum</code>
+          fugiat? Veniam, eum!
+        </p>
+
+        <pre>
+          int main(){
+      
+            cout &lt;&lt; "hello world";
+            return 0;
+      
+          }
+        </pre>
+
+        <dl>
+          <dt>Hello</dt>
+          <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, soluta modi! Distinctio labore vero
+            voluptatem laboriosam quis aut quisquam provident cumque adipisci, magni, dignissimos vel sequi, officiis
+            expedita sed similique.</dd>
+          <dt>Hi</dt>
+          <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eos eius soluta doloremque, nulla
+            voluptatibus ullam vitae ut porro? Facere ex eum commodi ipsum ducimus amet consequuntur, rerum id quisquam.
+          </dd>
+          <dt>Welcome</dt>
+          <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit vitae sit, cum fugit sapiente quod natus
+            at, quos et in, inventore facilis velit magni consequuntur impedit dolorem atque libero ex.</dd>
+        </dl>
+
+      </article>
+    </section>
+  </main>
+  <aside>TODO</aside>
+
+  <footer>
+    &copy; All rights resevered
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/Week 7/creatingForms.css">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="">
+        <h1>Regristration Form</h1>
+        <div class="field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="John Doe">
+        </div>
+        <div class="field">
+            <label for="bd">Date of Birth</label>
+            <input type="date" name="dob" id="bd">
+        </div>
+        <div class="field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="jdoe@example.com">
+        </div>
+        <div class="field">
+            <label for="pw">Password</label>
+            <input type="password" name="pw" id="pw" placeholder="Password">
+        </div>
+
+        <div class="field">
+            <label>Gender</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+        </div>
+
+        <fieldset>
+            <legend>Address</legend>
+            <div class="field">
+                <label for="street">Street</label>
+                <input type="text" name="street" id="street" placeholder="Type your street including apt# here...">
+            </div>
+            <div class="field">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" placeholder="Type your city here...">
+            </div>
+            <div class="field">
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="">Select a state</option>
+                    <option value="Al"> Alabama</option>
+                    <option value="AZ"> Arizona</option>
+                    <option value="UT" selected> Utah</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="zip">Zip Code</label>
+                <input type="text" name="zip" id="zip" placeholder="84408" maxlength="5" >
+            </div>
+        </fieldset>
+
+        <div class="field">
+            <label for="degrees">Degrees</label>
+            <select name="degrees" id="degrees" multiple>
+                <option value="hs">High School</option>
+                <option value="as">Associate degree</option>
+                <option value="bs">Bachelor's</option>
+                <option value="ms">Masters</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Hobbies</label>
+            <input type="checkbox" name="football" id="football">
+            <label for="football">Football</label>
+            <input type="checkbox" name="basketball" id="basketball">
+            <label for="basketball">Basketball</label>
+        </div>
+        <div class="field">
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment" cols="80" rows="10"></textarea>
+        </div>
+
+        <div class="field">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="button">Cancel</button>
+        </div>
+
+    </form>
+    
+</body>
+</html>

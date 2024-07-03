@@ -1,0 +1,125 @@
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* the '*' is a universal selector saying select all */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header{
+    padding: 10px;
+    color: maroon;
+}
+
+header > .top > span:nth-child(2){
+    float: right;
+}
+
+header > h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    border-top: 2px solid maroon;
+    padding-top: 1rem;
+    margin: 10px 0 5px 0;
+}
+
+header > h1 > .subtitle{
+    display: block;
+    font-size: 1rem;
+    border-top: 1px solid maroon;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.toph > img{
+    width: 100%;
+}
+
+/* cards */
+.cards{
+    text-align: center;
+}
+
+.cards > div{
+    display: inline-block;
+    width:  30%;
+    background-color: lightgray;
+    margin: 10px;
+    padding: 10px;
+    vertical-align: top;
+    height: 250px;
+}
+
+.cards > div > ul, .cards > div > p{
+    text-align: left;
+}
+
+.cards > div > h1{
+    background-color: white;
+    border: 1px solid white;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    line-height: 60px;
+    display: inline-block;
+}
+
+blockquote{
+    font-size: 2rem;
+    color: maroon;
+    text-align: center;
+}
+
+blockquote::before, blockquote::after{
+    content: '"';
+    font-size: 2rem;
+    color: grey;
+}
+
+table{
+    width: 98%;
+    margin: 10px;
+    border-collapse: collapse;
+}
+
+table > thead{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: rosybrown;
+}
+
+thead > th, thead > td{
+    padding: 10px 0;
+
+}
+
+tbody tr:nth-child(odd){
+    background-color: white;
+}
+
+tbody tr:nth-child(even){
+    background-color: lightgrey;
+}
+
+.highlighted{
+    background-color: thistle;
+    margin: 10px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.highlighted img{
+    float: right;
+    border: 2px dashed green;
+    margin: 1rem;
+}

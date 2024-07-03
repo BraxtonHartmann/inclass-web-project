@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container .item{
+            background: blue;
+            font-size: 2rem;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+
+            /* flex-basis: 0px;
+            flex-grow: 1;
+            flex-shrink: 1; 
+            
+            Shorthand Property
+            flex: (grow) (shrink) (basis);
+            */
+            
+
+        }
+
+        /* 
+        .container .item:nth-child(3){
+            flex-grow: 1;
+            order:-1;
+            flex-basis: 50px;
+        } */
+
+        /* .container .item:nth-child(4){
+            flex-grow: 2;
+        } */
+
+        .container .item:nth-child(2){
+            align-self: flex-start;
+        }
+
+        .container{
+            background:red;
+            padding: 20px;
+            margin: 10px;
+            height: 40vh;
+
+            display: flex;
+            align-items: center;
+
+            /* flex-flow: row wrap; */
+            /* Flex-row is a shorthand for wrap and direction
+            flex-wrap:wrap-reverse;
+            flex-direction: column; */
+
+            /* flex-direction:row ;
+            justify-content: space-around;
+            align-items: stretch; */
+
+            /* align-content: space-around; */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+
+    </div>
+</body>
+</html>

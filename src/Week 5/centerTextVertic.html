@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: inherit;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .circle{
+            float:left;
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            margin: .5rem;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .vcenter1 .circle{
+            line-height: 150px;
+        }
+
+        .vcenter2 .circle::after{
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .vcenter3{
+            display: table;
+            border-spacing: 1rem;
+        }
+
+        .vcenter3 .circle{
+            float: none;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Centering Text Vertically</h1>
+        <section>
+            <h2>Using line-Height</h2>
+            <div class="clearfix vcenter1">
+                <div class="circle">ONE</div>
+                <div class="circle">TWO</div>
+                <div class="circle">THREE</div>
+                <div class="circle">FOUR</div>
+            </div>
+        </section>
+        <section>
+            <h2>Using pseudoelements to make vertical-align work</h2>
+            <div class="clearfix vcenter2">
+                <div class="circle">ONE</div>
+                <div class="circle">TWO</div>
+                <div class="circle">THREE</div>
+                <div class="circle">FOUR</div>
+            </div>
+        </section>
+        <section>
+            <h2>Using CSS table-cells</h2>
+            <div class="clearfix vcenter3">
+                <div class="circle">ONE</div>
+                <div class="circle">TWO</div>
+                <div class="circle">THREE</div>
+                <div class="circle">FOUR</div>
+            </div>
+        </section>
+    </article>
+    
+</body>
+</html>

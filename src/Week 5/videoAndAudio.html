@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: inherit;
+        }
+
+        div.video,
+        div.audio,
+        div.youtube {
+            background-color: #eee;
+            border: 2px solid gray;
+            padding: 1rem;
+            width: 60%;
+            margin: 1rem auto;
+        }
+        .youtube-embed{
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+        .youtube-embed iframe{
+            position: absolute;
+            border: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video">
+        <h3>MP4 Video</h3>
+        <video width="100%" controls loop muted>
+            <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" />
+        </video>
+    </div>
+
+    <div class="audio">
+        <h3>MP3 Audio</h3>
+        <audio controls>
+            <source src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" />
+        </audio>
+    </div>
+
+    <div class="youtube">
+        <h3>Youtube Video</h3>
+        <div class="youtube-embed">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/b_T8zfMsqqM?si=sdH63djZsKbqndPB"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+
+</html>
