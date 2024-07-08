@@ -15,7 +15,7 @@ function render(){
         ctx.fill()
     }
 }
-
+ 
 document.body.onload = render
 document.getElementById('x').onchange = render
 document.getElementById('c').onchange = render

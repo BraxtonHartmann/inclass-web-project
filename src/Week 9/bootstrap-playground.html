@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Playground</title>
+
+ 
+  <style>
+    body {
+      counter-reset: section;
+    }
+
+    section::before {
+      counter-increment: section;
+      color: rgb(13, 110, 253);
+      content: "Section " counter(section) ": ";
+    }
+    section {
+      margin: 2rem 1rem 1rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="display-5 fw-bold text-center text-primary pt-5">CS 2350<br>Boostrap Playground</h1>
+    <p class="lead text-center">
+      Below are 20 important components/utilities/techniques to get you started with Bootstrap. For more, always consult 
+      <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">Bootstrap Docs</a>. Download this file and open it in your code editor to see its HTML.
+    </p>
+  </div>
+
+  <!-- Containers -->
+  <section class="display-5 container" id="containers">Containers</section>
+  <h1 class="bg-secondary text-light">No container (not good)</h1>
+  <h1 class="container bg-secondary text-light">Container</h1>
+  <h1 class="container-fluid bg-secondary text-light">Fluid container</h1>
+
+  <!-- Headers -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-10">
+
+        <section class="display-5 container" id="headers">Headers</section>
+        <div class="container">
+          <h1>Header 1</h1>
+          <h2>Header 2</h2>
+          <h3>Header 3</h3>
+          <h4>Header 4</h4>
+          <h5>Header 5</h5>
+          <h6>Header 6</h6>
+        </div>
+      
+        <section class="display-5 container" id="displays">Display headings</section>
+        <div class="container">
+          <h1 class="display-1">Display heading 1</h1>
+          <h1 class="display-2">Display heading 2</h1>
+          <h1 class="display-3">Display heading 3</h1>
+          <h1 class="display-4">Display heading 4</h1>
+          <h1 class="display-5">Display heading 5</h1>
+          <h1 class="display-6">Display heading 6</h1>
+        </div>
+      
+        <!-- Colors -->
+        <section class="display-5 container" id="colors">Text colors</section>
+        <div class="container">
+          <div class="text-primary">Primary</div>
+          <div class="text-secondary">Secondary</div>
+          <div class="text-success">Success</div>
+          <div class="text-danger">Danger</div>
+          <div class="text-info">Info</div>
+          <div class="text-warning">Warning</div>
+          <div class="text-dark">Dark</div>
+          <div class="text-light">Light</div>
+        </div>
+      
+        <!-- Paddings -->
+        <section class="display-5 container" id="paddings">Paddings</section>
+        <div class="container container">
+          <div class="bg-primary p-5">All around</div><br>
+          <div class="bg-primary pt-5">Top</div><br>
+          <div class="bg-primary pb-5">Bottom</div><br>
+          <div class="bg-primary ps-5">Start</div><br>
+          <div class="bg-primary pe-5">End</div><br>
+          <div class="bg-primary py-5">Top and bottom</div><br>
+          <div class="bg-primary px-5">Start and end</div><br>
+        </div>
+      
+        <!-- Margins -->
+        <section class="display-5 container" id="margins">Margins</section>
+        <div class="container">
+          <div class="bg-info m-5">All around</div><br>
+          <div class="bg-info mt-5">Top</div><br>
+          <div class="bg-info mb-5">Bottom</div><br>
+          <div class="bg-info ms-5">Start</div><br>
+          <div class="bg-info me-5">End</div><br>
+          <div class="bg-info my-5">Top and bottom</div><br>
+          <div class="bg-info mx-5">Start and end</div><br>
+        </div>
+      
+        <!-- Floating -->
+        <section class="display-5 container" id="floating">Floating</section>
+        <div class="container clearfix">
+          <div class="bg-success p-3 float-start">Left</div>
+          <div class="bg-success p-3 float-end">Right</div>
+        </div>
+        
+        <!-- Text alignment -->
+        <section class="display-5 container" id="alignment">Text alignment</section>
+        <div class="container">
+          <p class="text-start">Left (start)</p>
+          <p class="text-end">Right (end)</p>
+          <p class="text-center">Center</p>
+        </div>
+      
+        <!-- Backgrounds -->
+        <section class="display-5 container" id="backgrounds">Backgrounds</section>
+        <div class="container">
+          <div class="p-2 m-2 bg-light text-dark">Dark on light</div>
+          <div class="p-2 m-2 bg-dark text-light">Light on dark</div>
+          <div class="p-2 m-2 bg-primary text-light">Light on primary</div>
+          <div class="p-2 m-2 bg-info text-primary">Primary on info</div>
+          <div class="p-2 m-2 bg-danger text-sucess">Success on danger</div>
+        </div>
+      
+        <!-- Buttons -->
+        <section class="display-5 container" id="buttons">Buttons</section>
+        <div class="container">
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-secondary">Secondary</button>
+          <button type="button" class="btn btn-success">Success</button>
+          <button type="button" class="btn btn-danger">Danger</button>
+          <button type="button" class="btn btn-warning">Warning</button>
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-light">Light</button>
+          <button type="button" class="btn btn-dark">Dark</button>
+          <button type="button" class="btn btn-link">Link</button>
+        </div>
+      
+        <!-- Alerts -->
+        <section class="display-5 container" id="alerts">Alerts</section>
+        <div class="container">
+          <div class="alert alert-primary">Primary alert</div>
+          <div class="alert alert-secondary">Secondary alert</div>
+          <div class="alert alert-success">Success alert</div>
+          <div class="alert alert-danger">Danger alert</div>
+          <div class="alert alert-warning">Warning alert</div>
+          <div class="alert alert-info">Info alert</div>
+          <div class="alert alert-light">Light alert</div>
+          <div class="alert alert-dark">Dark alert</div>
+        </div>
+      
+        <!-- Images -->
+        <section class="display-5 container" id="images">Responsive images</section>
+        <div class="container">
+          <img class="img-fluid" src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1748&q=80" alt="Galaxy">
+        </div>
+      
+        <!-- Images -->
+        <section class="display-5 container" id="thumbnails">Thumbnails</section>
+        <div class="container">
+          <img class="img-thumbnail w-25" src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1748&q=80" alt="Galaxy">
+          <img class="img-thumbnail w-25" src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1748&q=80" alt="Galaxy">
+          <img class="img-thumbnail w-25" src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1748&q=80" alt="Galaxy">
+        </div>
+      
+        <!-- Flexbox -->
+        <section class="display-5 container" id="flexbox">Flexbox</section>
+        <div class="container text-light">
+          <div class="d-flex flex-row">
+            <div class="flex-grow-1 d-flex flex-column">
+              <div class="p-5 bg-danger">Top</div>
+              <div class="d-flex flex-row">
+                <div class="p-5 bg-primary flex-grow-1">Middle left</div>
+                <div class="p-5 bg-success flex-grow-1">Middle right</div>
+              </div>
+              <div class="p-5 bg-info">Bottom</div>
+            </div>
+            <div class="p-5 flex-grow-1 bg-warning">Right</div>
+          </div>
+        </div>
+      
+        <!-- Table -->
+        <section class="display-5 container" id="tables">Tables</section>
+        <div class="container">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Smith</td>
+                <td>@smith</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Rob</td>
+                <td>Johns</td>
+                <td>@johns</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Jane</td>
+                <td>Doe</td>
+                <td>@doe</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      
+        <!-- Jumbotron -->
+        <section class="display-5 container" id="hero">Jumbotron(Hero unit)</section>
+        <div class="container-fluid py-5 bg-info">
+          <h1 class="display-5 fw-bold">Big title goes here</h1>
+          <p class="lead fs-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iste eaque sapiente illum. Inventore molestiae reiciendis quidem nemo obcaecati illo esse consectetur aliquid dolores delectus non a illum, doloremque repellendus.</p>
+          <button class="btn btn-primary btn-lg">Learn more</button>
+        </div>
+      
+        <!-- Grid -->
+        <section class="display-5 container" id="grid">Grid</section>
+        <div class="container">
+          <h2>Equal-width</h2>
+          <div class="row">
+            <div class="col p-2 bg-primary text-light text-center">1 of 1</div>
+            <div class="col p-2 bg-secondary text-light text-center">1 of 2</div>
+            <div class="col p-2 bg-info text-light text-center">1 of 3</div>
+            <div class="col p-2 bg-success text-light text-center">1 of 4</div>
+            <div class="col p-2 bg-warning text-light text-center">1 of 5</div>
+          </div>
+          <h2>Using column width (a total of 12 column per row)</h2>
+          <div class="row">
+            <div class="col-4 p-2 bg-secondary text-light text-center">4 cols</div>
+            <div class="col-3 p-2 bg-warning text-light text-center">3 cols</div>
+            <div class="col-5 p-2 bg-primary text-light text-center">5 cols</div>
+          </div>
+          <h2>Column width varies with content</h2>
+          <div class="row justify-content-md-center">
+            <div class="col col-2 p-2 bg-primary text-light text-center">
+              1 of 3
+            </div>
+            <div class="col-md-auto p-2 bg-secondary text-light text-center">
+              ................. Variable width content .................
+            </div>
+            <div class="col col-2 p-2 bg-warning text-light text-center">
+              3 of 3
+            </div>
+          </div>
+          <h2>Rows of a certain number of columns (2 for example)</h2>
+          <div class="row row-cols-2">
+            <div class="col p-2 bg-primary text-light text-center">1 of 1</div>
+            <div class="col p-2 bg-secondary text-light text-center">1 of 2</div>
+            <div class="col p-2 bg-info text-light text-center">1 of 3</div>
+            <div class="col p-2 bg-success text-light text-center">1 of 4</div>
+            <div class="col p-2 bg-warning text-light text-center">1 of 5</div>
+          </div>
+        </div>
+      
+        <!-- Cards -->
+        <section class="display-5 container" id="cards">Cards</section>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  Header
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                    <p>A well-known quote, contained in a blockquote element.</p>
+                    <footer class="blockquote-footer">Someone</footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <svg class="bd-placeholder-img"  width="100%" height="120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="rgb(108, 117, 125)"></rect></svg>
+      
+                <div class="card-body">
+                  <h5 class="card-title">Title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Item 1</li>
+                  <li class="list-group-item">Item 2</li>
+                  <li class="list-group-item">Item 2</li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Link 1</a>
+                  <a href="#" class="card-link">Link 2</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-center">
+                <div class="card-header">
+                  Header
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-muted">
+                  Footer
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Navbar -->
+        <section class="display-5 container" id="navbars">Navbars</section>
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Primary Brand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nvbID1">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nvbID1">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Options
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action 1</a></li>
+                    <li><a class="dropdown-item" href="#">Action 2</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Last action</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign in</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign out</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Light Brand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nvbID2">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nvbID2">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Options
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action 1</a></li>
+                    <li><a class="dropdown-item" href="#">Action 2</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Last action</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign in</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign out</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Dark Brand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nvbID3">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nvbID3">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Options
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action 1</a></li>
+                    <li><a class="dropdown-item" href="#">Action 2</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Last action</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign in</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign out</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      
+        <!-- Lists -->
+        <section class="display-5 container" id="lists">Lists</section>
+        <div class="container">
+          <h2>Inline</h2>
+          <ul class="list-inline">
+            <li class="list-inline-item">Item 1</li>
+            <li class="list-inline-item">Item 2</li>
+            <li class="list-inline-item">Item 3</li>
+          </ul>
+          <h2>Unstyled</h2>
+          <ul class="list-unstyled">
+            <li>List item A</li>
+            <li>List item B</li>
+            <li>List item C:
+              <ul>
+                <li>Item C.a</li>
+                <li>Item C.b</li>
+                <li>Item C.c</li>
+              </ul>
+            </li>
+            <li>List item D</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-2">
+        <ul class="nav flex-column float-end sticky-top me-5">
+          <li class="nav-item"><strong class="nav-link text-dark">Contents</strong></li>
+          <li class="nav-item"><a class="nav-link" href="#containers">Containers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#headers">Headers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#displays">Displays</a></li>
+          <li class="nav-item"><a class="nav-link" href="#colors">Colors</a></li>
+          <li class="nav-item"><a class="nav-link" href="#paddings">Paddings</a></li>
+          <li class="nav-item"><a class="nav-link" href="#margins">Margins</a></li>
+          <li class="nav-item"><a class="nav-link" href="#floating">Floating</a></li>
+          <li class="nav-item"><a class="nav-link" href="#alignment">Text alignment</a></li>
+          <li class="nav-item"><a class="nav-link" href="#backgrounds">Backgrounds</a></li>
+          <li class="nav-item"><a class="nav-link" href="#buttons">Buttons</a></li>
+          <li class="nav-item"><a class="nav-link" href="#alerts">Alerts</a></li>
+          <li class="nav-item"><a class="nav-link" href="#images">Responsive images</a></li>
+          <li class="nav-item"><a class="nav-link" href="#thumbnails">Thumbnails</a></li>
+          <li class="nav-item"><a class="nav-link" href="#flexbox">Flexbox</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tables">Tables</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hero">Jumbotron</a></li>
+          <li class="nav-item"><a class="nav-link" href="#grid">Grid</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cards">Cards</a></li>
+          <li class="nav-item"><a class="nav-link" href="#navbars">Navbars</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lists">Lists</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
