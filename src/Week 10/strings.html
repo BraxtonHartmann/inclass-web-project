@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Check console log</p>
+
+
+    <script>
+        let dept = "CS"
+        let num = 2350
+        let name = 'Jack'
+        let greeting = `Welcome`
+
+        // 1 using concatination
+        let msg = greeting + ' ' + name + " to " + dept + num + '!'
+        console.log(msg)
+
+        //2: using interpolation
+        let msg2 = `${greeting} 
+        ${name} to 
+        ${dept}${num}!`
+        console.log(msg2)
+    </script>
+</body>
+</html>
